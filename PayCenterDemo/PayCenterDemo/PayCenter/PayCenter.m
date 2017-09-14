@@ -16,7 +16,7 @@
 #import "PayCenter.h"
 //#import "WXApi.h"
 //#import "AlipayRequestConfig.h"
-//#import "AppDelegate.h"
+#import "AppDelegate.h"
 
 #import <objc/runtime.h>
 #import "PayResultReverter.h"
@@ -46,8 +46,7 @@ NSString * const kRequestedOutTradeNo = @"kRequestedOutTradeNo";
 
 /**获取全局PayCenter实例*/
 + (instancetype)sharedPayCenter {
-    return [PayCenter new];
-    //return (PayCenter*)[[AppDelegate sharedInstance] payCenter];
+    return (PayCenter*)[[AppDelegate sharedInstance] payCenter];
 }
 
 - (void)setPayCenterDelegate:(id<PayCenterProtocol>)delegate {
