@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PayCenter"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "iOS aliPay wechatPay PayCenter"
   s.homepage     = "https://github.com/HeavenDoor/PayCenter"
   s.license      = "MIT"
