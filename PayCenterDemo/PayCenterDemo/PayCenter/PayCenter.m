@@ -19,7 +19,7 @@
 //#import "AppDelegate.h"
 
 #import <objc/runtime.h>
-//#import "PayResultReverter.h"
+#import "PayResultReverter.h"
 
 NSString * const kAliPayOutTradeNo  = @"kAliPayOutTradeNo";
 NSString * const kAliPayProductName = @"kAliPayProductName";
@@ -129,8 +129,8 @@ NSString * const kRequestedOutTradeNo = @"kRequestedOutTradeNo";
     if (_delegate != nil/* && [_delegate respondsToSelector:@selector(restoreWeChatPay:)]*/) {
         NSString *outTradeNo = objc_getAssociatedObject(_delegate, (__bridge const void *)(kRequestedOutTradeNo));
         if (outTradeNo.length != 0) {
-//            PayResultReverter *reverter = [[PayResultReverter alloc] initWithOutTradeNumber:outTradeNo Observer:self];
-//            [reverter requestPayResult];
+            PayResultReverter *reverter = [[PayResultReverter alloc] initWithOutTradeNumber:outTradeNo Observer:self];
+            [reverter requestPayResult];
         }
     }
     [self removeRequestOutTradeNo];
