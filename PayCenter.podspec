@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PayCenter"
-  s.version      = "1.0.9"
+  s.version      = "1.1.0"
   s.summary      = "iOS aliPay wechatPay PayCenter"
   s.homepage     = "https://github.com/HeavenDoor/PayCenter"
   s.license      = "MIT"
@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   #s.source_files = "PodSpec/HelloPodSpec.{h,m}"
   s.source_files = 'PayCenterDemo/PayCenterDemo/PayCenter/**/*'
   s.requires_arc = true
+  s.dependency 'XMLDictionary', '~> 1.4.1'
 end
