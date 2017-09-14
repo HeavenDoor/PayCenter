@@ -19,7 +19,7 @@
 //#import "AppDelegate.h"
 
 #import <objc/runtime.h>
-#import "PayResultReverter/PayResultReverter.h"
+#import "PayResultReverter.h"
 
 NSString * const kAliPayOutTradeNo  = @"kAliPayOutTradeNo";
 NSString * const kAliPayProductName = @"kAliPayProductName";
